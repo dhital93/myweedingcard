@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="weddingcard.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>wedding</title>
+  </head>
+  <body onload="display()">
+    <div id="nameHolder">
+      <div id="firstImage">
+        <img class="first" src="frontcard.jpg" alt="" width="" height="" />
+      </div>
+      <h2 id="name"></h2>
+
+      <h2 id="lastName"></h2>
+      <button id="button" onclick="next()">OPEN</button>
+    </div>
+    <div id="cardHolder">
+      <div id="secondImage">
+        <img class="second" src="maincard.jpg" alt="" />
+      </div>
+    </div>
+    <script>
+      function next() {
+        document.getElementById("cardHolder").style.display = "block";
+        document.getElementById("nameHolder").style.display = "none";
+      }
+      function display() {
+        document.getElementById("name").innerHTML = window.localStorage.getItem(
+          "fName"
+        );
+
+        document.getElementById(
+          "lastName"
+        ).innerHTML = window.localStorage.getItem("lastName");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+body {
+  margin: 20%;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  background-color: red;
+}
+input {
+  margin: 10px;
+  border-radius: 5px;
+  border-color: black;
+  outline: none;
+  height: 20px;
+}
+
+button {
+  width: 50px;
+  margin: 10px;
+  border-radius: 5px;
+  outline: none;
+  border-color: blue;
+}

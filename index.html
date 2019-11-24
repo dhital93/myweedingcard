@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./login.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>login</title>
+  </head>
+  <body>
+    <div id="main">
+      <input type="text" id="fName" placeholder="First Name" /><br />
+      <input type="text" id="lName" placeholder="Last Name" /><br />
+      <button onclick="ok()">Ok</button>
+    </div>
+    <script>
+      function ok() {
+        var first = document.getElementById("fName").value;
+        window.localStorage.setItem("fName", first);
+        var last = document.getElementById("lName").value;
+        window.localStorage.setItem("lastName", last);
+        window.open("./weddingcard.html", "_self");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+#nameHolder {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.first {
+  transform: rotate(270deg);
+  height: 800px;
+  width: 500px;
+}
+#name {
+  position: absolute;
+  margin-top: 410px;
+  margin-left: 60px;
+}
+#lastName {
+  position: absolute;
+  margin-top: 410px;
+  margin-left: 200px;
+}
+#button {
+  position: absolute;
+  position: absolute;
+  margin-top: 500px;
+  margin-left: 100px;
+  height: 100px;
+  width: 100px;
+  border-radius: 20px;
+  outline: none;
+  border: black 5px solid;
+}
+#cardHolder {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  display: none;
+}
+.second {
+  height: 700px;
+  width: 400px;
+}
+#secondImage {
+  display: flex;
+  justify-content: center;
+}
