@@ -9,9 +9,12 @@
   </head>
   <body>
     <div id="main">
+      <h2>Wel Come To The Digital Wedding Card</h2>
+      <h2>Please Enter Your First And Last Name.</h2>
       <input type="text" id="fName" placeholder="First Name" /><br />
       <input type="text" id="lName" placeholder="Last Name" /><br />
-      <button onclick="ok()">Ok</button>
+      <button onclick="ok(),nospace()">Ok</button>
+      <h4 id="alert"></h4>
     </div>
     <script>
       function ok() {
@@ -19,7 +22,16 @@
         window.localStorage.setItem("fName", first);
         var last = document.getElementById("lName").value;
         window.localStorage.setItem("lastName", last);
-        window.open("./weddingcard.html", "_self");
+      }
+      function nospace() {
+        var first = document.getElementById("fName").value;
+        var last = document.getElementById("lName").value;
+        if (first !== "" && last !== "") {
+          window.open("./weddingcard.html", "_self");
+        } else {
+          document.getElementById("alert").innerHTML =
+            "Please Enter your Name and last Name";
+        }
       }
     </script>
   </body>

@@ -19,13 +19,14 @@
     </div>
     <div id="cardHolder">
       <div id="secondImage">
-        <img class="second" src="maincard.jpg" alt="" />
+        <img class="second" src="maincard2.jpg" alt="" />
       </div>
     </div>
     <script>
       function next() {
         document.getElementById("cardHolder").style.display = "block";
         document.getElementById("nameHolder").style.display = "none";
+        document.querySelectorAll("body")[0].style.background = "black";
       }
       function display() {
         document.getElementById("name").innerHTML = window.localStorage.getItem(

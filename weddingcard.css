@@ -1,49 +1,109 @@
-body {
-  margin: 0;
-  padding: 0;
+@media (min-width: 600px) {
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: red;
+  }
+  #nameHolder {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .first {
+    transform: rotate(270deg);
+    height: 800px;
+    width: 500px;
+    border: 8px solid black;
+  }
+  #name {
+    position: absolute;
+    margin-top: 410px;
+    margin-left: 60px;
+  }
+  #lastName {
+    position: absolute;
+    margin-top: 410px;
+    margin-left: 200px;
+  }
+  #button {
+    position: absolute;
+    position: absolute;
+    margin-top: 550px;
+    margin-left: 150px;
+    height: 100px;
+    width: 100px;
+    border-radius: 20px;
+    outline: none;
+    border: black 5px solid;
+  }
+  #cardHolder {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    display: none;
+  }
+  .second {
+    height: 700px;
+    width: 400px;
+    transform: rotate(-90deg);
+  }
+  #secondImage {
+    display: flex;
+    justify-content: center;
+  }
 }
-#nameHolder {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-.first {
-  transform: rotate(270deg);
-  height: 800px;
-  width: 500px;
-}
-#name {
-  position: absolute;
-  margin-top: 410px;
-  margin-left: 60px;
-}
-#lastName {
-  position: absolute;
-  margin-top: 410px;
-  margin-left: 200px;
-}
-#button {
-  position: absolute;
-  position: absolute;
-  margin-top: 500px;
-  margin-left: 100px;
-  height: 100px;
-  width: 100px;
-  border-radius: 20px;
-  outline: none;
-  border: black 5px solid;
-}
-#cardHolder {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  display: none;
-}
-.second {
-  height: 700px;
-  width: 400px;
-}
-#secondImage {
-  display: flex;
-  justify-content: center;
+
+@media (max-width: 599px) {
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: red;
+  }
+  #nameHolder {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .first {
+    transform: rotate(270deg);
+    height: 500px;
+    width: 300px;
+    border: 8px solid black;
+  }
+  #name {
+    position: absolute;
+    margin-top: 260px;
+    margin-left: 60px;
+  }
+  #lastName {
+    position: absolute;
+    margin-top: 260px;
+    margin-left: 153px;
+  }
+  #button {
+    position: absolute;
+    position: absolute;
+    margin-top: 330px;
+    margin-left: 150px;
+    height: 70px;
+    width: 80px;
+    border-radius: 20px;
+    outline: none;
+    border: black 5px solid;
+  }
+  #cardHolder {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    display: none;
+  }
+  .second {
+    height: 400px;
+    width: 300px;
+    transform: rotate(-90deg);
+  }
+  #secondImage {
+    display: flex;
+    justify-content: center;
+  }
 }
