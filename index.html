@@ -22,16 +22,7 @@
         window.localStorage.setItem("fName", first);
         var last = document.getElementById("lName").value;
         window.localStorage.setItem("lastName", last);
-      }
-      function nospace() {
-        var first = document.getElementById("fName").value;
-        var last = document.getElementById("lName").value;
-        if (first !== "" && last !== "") {
-          window.open("./weddingcard.html", "_self");
-        } else {
-          document.getElementById("alert").innerHTML =
-            "Please Enter your Name and last Name";
-        }
+        window.open("./weddingcard.html", "_self");
       }
     </script>
   </body>
